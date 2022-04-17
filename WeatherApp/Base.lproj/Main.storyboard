@@ -84,6 +84,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
+                                                <connections>
+                                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffd-Hp-Jn5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -99,6 +102,15 @@
                             <constraint firstItem="2CG-9i-phR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x8Z-C0-GgI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appearentTemperatureLabel" destination="xQe-Rv-fBx" id="5Sj-yZ-qDS"/>
+                        <outlet property="humidityLabel" destination="Hfd-gb-riZ" id="t5S-Qr-luU"/>
+                        <outlet property="imageView" destination="SIT-ek-i6O" id="nQy-tb-tTZ"/>
+                        <outlet property="locationLabel" destination="aQb-Ou-8TY" id="b0F-8r-bcH"/>
+                        <outlet property="pressureLabel" destination="Pzs-K9-3Er" id="j9g-hV-rb3"/>
+                        <outlet property="refreshButton" destination="PQe-fV-YvR" id="15m-Ml-d4k"/>
+                        <outlet property="temperatureLabel" destination="GqQ-aI-NCc" id="wzF-TV-lH2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
